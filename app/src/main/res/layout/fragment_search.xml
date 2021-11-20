@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/charg"
+    tools:context=".SearchFragment"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/design">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChargingStation"
+            android:textSize="32sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:id="@+id/track"
+            android:layout_marginLeft="15dp"
+            android:textColor="#0674A6"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/track"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/charge_icon"/>
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:text="Know abot the nearest Charging \nstation  for your EV"
+            android:textSize="19sp"
+
+            android:id="@+id/tr"
+            android:layout_below="@+id/track"
+            android:layout_marginLeft="20dp"
+            android:textColor="#C9292A2B"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/design"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charging_station"
+            android:text="Find Charging station"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

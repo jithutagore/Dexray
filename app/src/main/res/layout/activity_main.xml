@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:menu="@menu/option"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personimg"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:src="@drawable/person"
+                app:civ_border_color="@color/ic_launcher_background"
+                app:civ_border_width="2dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/personimg"
+                android:text="Jithu Tagore"
+                android:id="@+id/personname"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/personimg"
+                android:text="jithutagore3@gmail.com"
+                android:textColor="@color/black"
+                android:id="@+id/personemail"
+                android:textSize="15sp"
+                android:layout_below="@id/personname"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/bottomnavigation"
+        android:layout_below="@id/toolbar">
+
+
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        android:id="@+id/bottomnavigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

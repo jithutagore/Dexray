@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Setting"
+        android:icon="@drawable/logo_new_dexray"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="Profile"
+                android:icon="@drawable/person_edit"
+                android:id="@+id/profile"/>
+            <item
+                android:title="Vehicle Information"
+                android:icon="@drawable/about_"
+                android:id="@+id/aboutus"/>
+            <item
+                android:title="Dexray Team"
+                android:icon="@drawable/group"
+                android:id="@+id/dexray_te"/>
+        </menu>
+    </item>
+</menu>
